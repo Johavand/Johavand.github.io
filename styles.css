@@ -1,31 +1,30 @@
-/* Reset default margins, paddings, and ensure box sizing is border-box */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Menu container styled to manifest a horizontal flexbox layout */
+  /* Menu container */
   .menu-container {
-    display: flex;                  /* Activates flexbox layout */
-    flex-direction: row;            /* Ensures a horizontal (row) orientation */
-    justify-content: center;        /* Centrally aligns the buttons horizontally */
-    align-items: center;            /* Vertically centers the buttons */
-    width: 100%;                    /* Occupies the full width of the viewport */
+    display: flex;                  
+    flex-direction: row;            
+    justify-content: center;        
+    align-items: center;           
+    width: 100%;                    
     padding: 10px 0;
-    background-color: #f0f0f0;      /* Optional background hue */
+    background-color: #f0f0f0;      
   }
   
   /* Stylistic specifications for the oval buttons */
   .menu-button {
-    text-decoration: none;          /* Suppresses underlines */
-    background-color: #3498db;      /* A vibrant cerulean tone */
-    color: #fff;                    /* White typography for contrast */
-    padding: 10px 20px;             /* Adequate internal spacing */
-    border-radius: 50px;            /* Renders the elliptical (oval) contour */
-    margin: 0 10px;                 /* Equitable lateral spacing */
+    text-decoration: none;          
+    background-color: #3498db;      
+    color: #fff;                   
+    padding: 10px 20px;             
+    border-radius: 50px;          
+    margin: 0 10px;                 
     font-size: 16px;
-    transition: background-color 0.3s ease; /* Smooth transition upon hover */
+    transition: background-color 0.3s ease;
   }
   
   /* Hover state engenders a subtle chromatic shift */
