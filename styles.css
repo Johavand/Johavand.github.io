@@ -1,43 +1,35 @@
-/* Universal reset to eliminate default margins and paddings */
+/* Reset default margins, paddings, and ensure box sizing is border-box */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Fixed top menu container with horizontal alignment */
+  /* Menu container styled to manifest a horizontal flexbox layout */
   .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f0f0f0; /* Optional: a subtle background for the menu */
-    display: flex;
-    justify-content: center;  /* Horizontally centers the buttons */
-    align-items: center;      /* Vertically centers the buttons */
+    display: flex;                  /* Activates flexbox layout */
+    flex-direction: row;            /* Ensures a horizontal (row) orientation */
+    justify-content: center;        /* Centrally aligns the buttons horizontally */
+    align-items: center;            /* Vertically centers the buttons */
+    width: 100%;                    /* Occupies the full width of the viewport */
     padding: 10px 0;
-    z-index: 1000;            /* Ensures the menu remains atop other elements */
+    background-color: #f0f0f0;      /* Optional background hue */
   }
   
-  /* Styling for the oval menu buttons */
+  /* Stylistic specifications for the oval buttons */
   .menu-button {
-    text-decoration: none;
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 50px;      /* Conveys the elliptical aesthetic */
+    text-decoration: none;          /* Suppresses underlines */
+    background-color: #3498db;      /* A vibrant cerulean tone */
+    color: #fff;                    /* White typography for contrast */
+    padding: 10px 20px;             /* Adequate internal spacing */
+    border-radius: 50px;            /* Renders the elliptical (oval) contour */
+    margin: 0 10px;                 /* Equitable lateral spacing */
     font-size: 16px;
-    margin: 0 10px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth transition upon hover */
   }
   
-  /* Interactive hover effect for enhanced user feedback */
+  /* Hover state engenders a subtle chromatic shift */
   .menu-button:hover {
     background-color: #2980b9;
-  }
-  
-  /* Optional: Add top margin to content to preclude overlap with the fixed menu */
-  .content {
-    margin-top: 60px; /* Adjust as necessary based on your menu's height */
   }
   
