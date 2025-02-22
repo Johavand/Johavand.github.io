@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-  }
+}
 
   /* Employ flexbox to center content vertically and horizontally */
 body {
@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
-  }
+}
 
   /* Container for the menu buttons */
 .menu-container {
@@ -18,7 +18,7 @@ body {
     flex-direction: column; /* Stacks buttons vertically */
     align-items: center;
     gap: 20px; /* Introduces a uniform spacing between buttons */
-  }
+}
 
   /* Style for the individual menu "buttons" */
 .menu-button {
@@ -30,9 +30,9 @@ body {
     border-radius: 50px; /* Generates an oval appearance */
     font-size: 18px;
     transition: background-color 0.3s ease; /* Smooth hover effect */
-  }
+}
 
   /* Hover effect for interactive feedback */
 .menu-button:hover {
     background-color: #2980b9;
-  }
+}
